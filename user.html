@@ -24,7 +24,7 @@
 <script>
     
     pct=localStorage.getItem("punctaj");
-    if(pct=='undefined'){localStorage.setItem("punctaj", 0);}
+    if(isNaN(pct)){localStorage.setItem("punctaj", 0);}
     pct=localStorage.getItem("punctaj");
     if(pct>=300){ document.getElementById("nivel").innerHTML='Nivel: NINJA'}
     if(pct>=100 && pct<=290){ document.getElementById("nivel").innerHTML='Nivel: MAESTRU'}
