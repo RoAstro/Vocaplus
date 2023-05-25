@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+         h1,h2,p{font-family: Arial, Helvetica, sans-serif;text-align: center;}
+
+  </style>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocaplus</title>
+</head>
+<body bgcolor="#FFB4B4">  <h1 style="font-size: 4rem;font-family: Arial, Helvetica, sans-serif;text-align: center;">Vocaplus</h1>
+
+    <img onclick=" window.open('user.html','_self');" src="https://cdn.pixabay.com/photo/2016/03/31/19/58/avatar-1295429_1280.png" alt="Profil" style="position: absolute;right: 15px;top:15px;height: 100px;width:100px;;">
+<h2>Timp ramas:</h2><h2 id="timp"></h2>
+    <h2>Cuvantul este:</h2>
+    <div style="border-radius: 10px;background-color: #AEE2FF ;height: 20%;"><h1 id="cuv" style="font-size: 3rem;">Cuvant</h1></div>
+<h2>Acest cuvant inseamna:</h2>
+<div style="border-radius: 10px;background-color: #B2A4FF;height: 20%;" onclick="def1()"><h2 id="def1" style="font-size: 2rem;">def1</h2></div>
+<div style="border-radius: 10px;background-color: #fff176;height: 20%;" onclick="def2()"><h2 id="def2" style="font-size: 2rem;">def2</h2></div>
+<div style="border-radius: 10px;background-color: #FFDEB4;height: 20%;" onclick="def3()"><h2 id="def3" style="font-size: 2rem;">def3</h2></div>
+
+<script>
+
+    timp=10;
+    function timplus(){
+        document.getElementById('timp').innerHTML=timp+' secunde';
+        if(timp>0){
+        timp=timp-1;
+        }else{
+            punctaj=punctaj-5;
+            localStorage.setItem('punctaj', punctaj);
+            alert('(Timp expirat)    -5 puncte');
+            window.open('user.html','_self');
+
+        }
+    }
+
+    setInterval(timplus, 1000);
+
+
+    elem1=Math.floor(Math.random() * 14) + 1;
+    elem1="t"+elem1;
+
+    elem2=Math.floor(Math.random() * 14) + 1;
+    elem2="t"+elem2;
+    if(elem1==elem2){    
+        elem2=Math.floor(Math.random() * 14) + 1;
+    elem2="t"+elem2;}
+
+    elem3=Math.floor(Math.random() * 14) + 1;
+    elem3="t"+elem3;
+    if(elem3==elem2 || elem3==elem1){    
+        elem3=Math.floor(Math.random() * 14) + 1;
+    elem3="t"+elem3;}
+
+   elem=[elem1, elem2, elem3];
+   corect=elem[Math.floor(Math.random() * 2)]
+
+
+    fetch('https://roastro.github.io/Vocaplus/data.json', {
+       headers: {
+          'Accept': 'application/json'
+       }
+    })
+       .then(response => response.text())
+       .then(text => 
+       {document.getElementById('cuv').innerHTML=JSON.parse(text)[corect].cuvant;
+        document.getElementById('def1').innerHTML=JSON.parse(text)[elem1].definitie;
+        document.getElementById('def2').innerHTML=JSON.parse(text)[elem2].definitie;
+        document.getElementById('def3').innerHTML=JSON.parse(text)[elem3].definitie;
+    
+    })
+    punctaj = parseInt(localStorage.getItem("punctaj"));
+
+    function def1(){
+   if(elem1==corect){punctaj=punctaj+5;localStorage.setItem('punctaj', punctaj);alert('+5 puncte');window.open('user.html','_self');}else{punctaj=punctaj-5;localStorage.setItem('punctaj', punctaj);alert('-5 puncte');window.open('user.html','_self');}
+    }
+    function def2(){
+        if(elem2==corect){punctaj=punctaj+5;localStorage.setItem('punctaj', punctaj);alert('+5 puncte');window.open('user.html','_self');}else{punctaj=punctaj-5;localStorage.setItem('punctaj', punctaj);alert('-5 puncte');window.open('user.html','_self');}
+    }
+    function def3(){
+        if(elem3==corect){punctaj=punctaj+5;localStorage.setItem('punctaj', punctaj);alert('+5 puncte');window.open('user.html','_self');}else{punctaj=punctaj-5;localStorage.setItem('punctaj', punctaj);alert('-5 puncte');window.open('user.html','_self');}
+    }
+    </script>
+</body>
+</html>
