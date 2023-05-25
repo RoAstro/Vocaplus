@@ -24,7 +24,7 @@
 },
 "t7":{
     "cuvant":"Sclifoseală",
- "definitie":"Faptul de a se sclifosi; mofturi, fasoane."
+ "definitie":"mofturi, fasoane."
 },
 "t8":{
     "cuvant":"Catadicsi",
@@ -53,7 +53,156 @@
 "t14":{
     "cuvant":"(a) ogoi",
  "definitie":"A (se) liniști, a (se) potoli, a (se) domoli, a (se) calma."
-}
+},
+ "t15":{
+    "cuvant":"A trăi ca-n sânul lui Avram",
+ "definitie":"a fi în elementul său, a o duce bine"
+},
+ "t16":{
+    "cuvant":"A freca menta ",
+ "definitie":" a irosi timpul"
+},
+ "t17":{
+    "cuvant":"A-și lua nasul la purtare",
+ "definitie":" a se obrăznici"
+},
+ "t18":{
+    "cuvant":"A face felul (cuiva)",
+ "definitie":"a ucide pe cineva, a păcăli"
+},
+ "t19":{
+    "cuvant":"A da apă la moară (cuiva) ",
+ "definitie":"a încuraja pe cineva într-o acțiune"
+},
+ "t120":{
+    "cuvant":"A călca pe bec",
+ "definitie":"a încălca o regulă"
+},
+ "t20":{
+    "cuvant":"A ieși la liman ",
+ "definitie":"a scăpa dintr-o primejdie; a ieși dintr-o situație dificilă"
+},
+ "t21":{
+    "cuvant":"A lua de-a gata",
+ "definitie":" a eșua în a aprecia o persoană sau lucru, deseori din cauza familiarității; a presupune că un lucru e adevărat, fără a pune la îndoială adevărul"
+},
+ "t22":{
+    "cuvant":"A o face de oaie",
+ "definitie":" a greși"
+},
+ "t23":{
+    "cuvant":"A vinde castraveți grădinarului",
+ "definitie":" a încerca să păcălești pe unul care știe adevărul"
+},
+ "t24":{
+    "cuvant":"A vinde pielea ursului din pădure",
+ "definitie":"a conta pe un lucru înainte de a fi sigur că-l poți obține"
+},
+ "t25":{
+    "cuvant":"A umbla teleleu (Tănase)",
+ "definitie":"a umbla de colo până colo, fără rost "
+},
+ "t26":{
+    "cuvant":"A fi teleleu Tănase",
+ "definitie":"a fi zăpăcit, aiurit, năuc"
+},
+ "t27":{
+    "cuvant":"A da la rațe",
+ "definitie":" a vomita"
+},
+ "t28":{
+    "cuvant":"A se uita ca vițelul la poarta nouă ",
+ "definitie":"a fi nedumerit, a nu ști"
+},
+ "t29":{
+    "cuvant":"A bate șaua ca să priceapă iapa ",
+ "definitie":"a face o aluzie"
+},
+ "t30":{
+    "cuvant":"A umbla cu cioara vopsită",
+ "definitie":" a minți, a înșela"
+},
+ "t31":{
+    "cuvant":"A fi prins cu mâța-n sac",
+ "definitie":"a fi prins cu minciuna (înșelând)"
+},
+  "t32":{
+    "cuvant":"A bate apa-n piuă ",
+ "definitie":"a vorbi fără rost"
+},
+  "t33":{
+    "cuvant":"A da cu oiștea-n gard",
+ "definitie":" a face o gafa"
+},
+  "t34":{
+    "cuvant":"A avea ac de cojocul cuiva",
+ "definitie":"a se putea răzbuna pe cineva"
+},
+  "t35":{
+    "cuvant":"A pune cu botul pe labe",
+ "definitie":"a pune pe cineva la respect"
+},
+  "t36":{
+    "cuvant":"A face cu ou și cu oțet ",
+ "definitie":"a certa, a dojeni, a critica"
+},
+  "t37":{
+    "cuvant":"A se aduna ca la mort",
+ "definitie":"a veni multă lume, a se înghesui"
+},
+  "t38":{
+    "cuvant":"A se aduna ca la urs ",
+ "definitie":"a se aduna în număr foarte mare"
+},
+  "t39":{
+    "cuvant":"A se uita ca la mașini străine",
+ "definitie":"a fi uimit"
+},
+  "t40":{
+    "cuvant":"A trage nădejde ca ursul de coadă",
+ "definitie":" a nădăjdui lucruri imposibil de realizat"
+},
+  "t41":{
+    "cuvant":"A ajunge cuțitul la os",
+ "definitie":"a ajunge într-o situație limită"
+},
+  "t42":{
+    "cuvant":"A duce cu preșul ",
+ "definitie":"a păcăli, a înșela"
+},
+  "t43":{
+    "cuvant":"A băga mâna în foc (pentru cineva)",
+ "definitie":" a garanta"
+},
+  "t44":{
+    "cuvant":"A nimerit orbul Brăila ",
+ "definitie":"a nu fi imposibil de realizat"
+},
+  "t45":{
+    "cuvant":"A se lupta cu morile de vânt ",
+ "definitie":"a încerca ceva fără rost"
+},
+  "t46":{
+    "cuvant":"A lua boii de la bicicletă",
+ "definitie":"a nu-i fi frică de pedeapsă"
+},
+   "t47":{
+    "cuvant":"A mâna porcii la jir ",
+ "definitie":" a sforăi"
+},
+   "t48":{
+    "cuvant":"A trece ca gâsca prin apă",
+ "definitie":"a face ceva fără a trage concluzii, fără a învăța"
+},
+   "t49":{
+    "cuvant":"A pune batista pe țambal",
+ "definitie":"a ascunde ceva, a tăinui, a o lăsa mai moale"
+},
+   "t50":{
+    "cuvant":"A-i pica fisa",
+ "definitie":"A-și da seama"
+},
+ 
 
 
 
