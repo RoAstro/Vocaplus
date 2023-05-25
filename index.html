@@ -1,35 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <style>
-        h2,p{text-align: center;font-family: Arial, Helvetica, sans-serif;font-size: 2.5rem;}
+    <style>         h1,h2,p{font-family: Arial, Helvetica, sans-serif;text-align: center;}
     </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vocaplus</title>
 </head>
-<body bgcolor="#B2A4FF">
-  <h1 style="font-size: 4rem;font-family: Arial, Helvetica, sans-serif;text-align: center;">Vocaplus</h1>
-  <img onclick=" window.open('user.html','_self');" src="https://cdn.pixabay.com/photo/2016/03/31/19/58/avatar-1295429_1280.png" alt="Profil" style="position: absolute;right: 15px;top:15px;height: 100px;width:100px;;">
-<div onclick=" window.open('learn.html','_self');" style="height:150px;width:90%;background-color: #fff176;border-radius: 10px;">
-<br><h2>Invata un cuvant nou</h2>
+<body bgcolor="#98EECC">
+    <center>
+         <h1 style="font-size: 4rem;font-family: Arial, Helvetica, sans-serif;text-align: center;">Vocaplus</h1>
 
-</div><br>
-<div onclick=" window.open('dyk.html','_self');" style="height:150px;width:90%;background-color: #FFDEB4;border-radius: 10px;">
-   <br> <h2>Stiati ca...?</h2>
+    <img src="https://cdn.pixabay.com/photo/2016/03/31/19/58/avatar-1295429_1280.png" alt="Profil" style="height: 200px;width:200px;;">
+<br>
+<h2 >Nume:</h2>
+<input type="text" id="nume"><button onclick="nume()">Salveaza numele</button>
+<h2 id="nivel"></h2>
+<h2>Punctaj:</h2><p id="pct"></p>
+<div onclick=" window.open('index.html','_self');" style="border-radius: 10px;background-color: #B2A4FF;width:50%"><h2 style="font-size: 2rem;">Inapoi la Pagina Principala</h2></div>
+
+</center>
+<script>
     
-    </div><br>
-    <div onclick=" window.open('test.html','_self');" style="height:150px;width:90%;background-color: #FFB4B4;border-radius: 10px;">
-       <br>
-        <h2>Testeaza-ti cunostiintele</h2>
-        
-        </div>
+    pct=localStorage.getItem("punctaj");
+    if(pct==undefined){localStorage.setItem('punctaj', 0);}
+    if(pct>=300){ document.getElementById("nivel").innerHTML='Nivel: NINJA'}
+    if(pct>=100 && pct<=290){ document.getElementById("nivel").innerHTML='Nivel: MAESTRU'}
+    if(pct>=50 && pct<100){ document.getElementById("nivel").innerHTML='Nivel: NOVICE'}
+    if(pct<50){ document.getElementById("nivel").innerHTML='Nivel: BOBOC'}
 
+
+   function nume(){
+    nume=document.getElementById('nume').value;
+    localStorage.setItem('nume', nume);
+   }
+
+if(localStorage.getItem("punctaj") < 0){localStorage.setItem('punctaj', 0);}
     
+    document.getElementById("nume").value = localStorage.getItem("nume");
+
+    document.getElementById("pct").innerHTML = localStorage.getItem("punctaj")+' puncte';
 
 
-   
+
+
+</script>
 </body>
 </html>
